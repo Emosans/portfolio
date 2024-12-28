@@ -4,6 +4,7 @@ interface ProjectCardProps {
   description: string;
   techStack: string;
   image: string;
+  link: string;
 }
 
 export default function ProjectCard({
@@ -12,6 +13,7 @@ export default function ProjectCard({
   description,
   techStack,
   image,
+  link,
 }: ProjectCardProps) {
   return (
     <div className="col-xs-12">
@@ -19,7 +21,9 @@ export default function ProjectCard({
       <div className="card-container">
         <div className="text-center">
           <h1 className="h2">
-            {number} : {title}
+            <a href={link} style={{color:'inherit'}}>
+              {number} : {title}
+            </a>
           </h1>
         </div>
         <p className="text-center">Tech Stack - {techStack}</p>

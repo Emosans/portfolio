@@ -24,3 +24,6 @@ def submit_form():
         return redirect('/thankyou.html')
     else:
         return 'something went wrong'
+    
+if __name__ == '__main__':
+    app.run()

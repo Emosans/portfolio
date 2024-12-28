@@ -4,7 +4,6 @@ interface ProjectCardProps {
   description: string;
   techStack: string;
   image: string;
-  link: string;
 }
 
 export default function ProjectCard({
@@ -13,7 +12,6 @@ export default function ProjectCard({
   description,
   techStack,
   image,
-  link,
 }: ProjectCardProps) {
   return (
     <div className="col-xs-12">
